@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="作业九__三题" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSj-Cm-LsF">
+                                <rect key="frame" x="16" y="359" width="343" height="288"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="tOT-Vp-5IU">
+                                <rect key="frame" x="168" y="610" width="87" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.60041380929999999" green="0.94278668109999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.86837386969999997" blue="0.86942015569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="pageControlClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="Cnm-zX-Kbq"/>
+                                </connections>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8h7-T4-3tF">
+                                <rect key="frame" x="26" y="91" width="321" height="227"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BSj-Cm-LsF" secondAttribute="bottom" constant="20" symbolic="YES" id="9m2-ih-eQj"/>
+                            <constraint firstItem="tOT-Vp-5IU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="BfS-op-ouF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8h7-T4-3tF" secondAttribute="trailing" constant="28" id="HJj-HZ-Eks"/>
+                            <constraint firstItem="BSj-Cm-LsF" firstAttribute="top" secondItem="8h7-T4-3tF" secondAttribute="bottom" constant="41" id="LQ0-7A-ecH"/>
+                            <constraint firstItem="8h7-T4-3tF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="QtR-oA-DJQ"/>
+                            <constraint firstItem="BSj-Cm-LsF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dbx-mF-1ix"/>
+                            <constraint firstItem="BSj-Cm-LsF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gcI-FR-NTY"/>
+                            <constraint firstItem="8h7-T4-3tF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="h94-Va-27I"/>
+                            <constraint firstItem="BSj-Cm-LsF" firstAttribute="bottom" secondItem="tOT-Vp-5IU" secondAttribute="bottom" id="oR6-Ty-srz"/>
+                            <constraint firstItem="BSj-Cm-LsF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="359" id="ugW-GJ-AaD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="tOT-Vp-5IU" id="9oj-Sh-F38"/>
+                        <outlet property="scrollView" destination="BSj-Cm-LsF" id="ic4-WA-9RC"/>
+                        <outlet property="scrollView2" destination="8h7-T4-3tF" id="4Bp-es-fDP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-964" y="143.47826086956522"/>
+        </scene>
+    </scenes>
+</document>
